@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning Tool</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Import Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        #captionContainer {
+            display: block; /* Make it always visible */
+            width: 100%; /* Full width of its parent column */
+            height: auto; /* Adjust height to content or use a fixed height */
+            border: 2px solid #007bff; /* Blue border for visibility */
+            border-radius: 5px; /* Slightly rounded corners for aesthetics */
+            overflow: hidden; /* Prevent content from spilling out */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column for Upload and Preview -->
+            
+
+            <div class="col-md-6">
+                <!-- Image Preview -->
+                <div class="mt-3">
+                    <img id="imagePreview" src="https://placehold.co/500x300/orange/white" alt="Image preview" class="img-fluid">
+                </div>
+                
+                <form id="imageUploadForm">
+                    <div class="form-group">
+                        <label for="imageInput">Upload Image</label>
+                        <input type="file" class="form-control-file" id="imageInput" accept="image/*">
+                    </div>
+                    <button type="button" id="submitBtn" class="btn btn-primary">Submit</button>
+                </form>
+                
+            </div>
+            <!-- Right Column for Caption Display -->
+            <div class="col-md-6">
+                <div id="captionContainer" class="border p-3" style="height: 200px;">
+                    <p id="imageCaption">Caption will be displayed here.</p>
+                    
+                </div>
+                <div class="mt-1">
+                    <button id="speakBtn" class="btn btn-secondary">Hear Caption</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
