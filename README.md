@@ -20,15 +20,17 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+### Instructor
+
+Fikayo Adepoju
+
+Technical Writer | Software Developer                 
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/fikayo-adepoju?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/build-an-image-captioning-tool-for-visually-impaired-users-with-gemini
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQHvLDVro1C27Q/learning-public-crop_675_1200/0/1715978287117?e=2147483647&v=beta&t=mPW4isxbzts-zauVcIBJp8wytJhBogouPsZtaIzR8Fg
 
